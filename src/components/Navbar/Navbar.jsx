@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Create a CSS file for styling
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ const gotoHome =()=>{
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Services</a>
-          <a href="/login">Login</a>
+          <Link to="/login">Login</Link>
         </div>
         <div className="navbar-toggle" onClick={toggleNavbar}>
           <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>

@@ -36,15 +36,17 @@ return formattedDate
       <Navbar />
       <div className="profile-container">
         <h3>Profile</h3>
-        {profileData?.data && profileData?.data?.length > 0 && (
+        {profileData?.data && profileData?.data?.length > 0 ? (
           <div className="profile-details">
             <p>Name: {profileData?.data[0]?.name}</p>
             <p>DOB: {formatDate(profileData?.data[0]?.dob)}</p> {/* Format the date here */}
             <p>Gender: {profileData?.data[0]?.gender}</p>
+            <Link className="login-button" to='/edit'>Edit</Link>
           </div>
-        )}
+          
+        ): <p>Login to see profile details</p>}
 
-        <Link className="login-button" to='/edit'>Edit</Link>
+       
       </div>
     </div>
   );

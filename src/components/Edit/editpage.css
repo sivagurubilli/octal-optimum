@@ -1,0 +1,53 @@
+/* EditProfilePage.css (create a separate CSS file or include it within your component) */
+.edit-profile-container {
+    
+    padding: 50px;
+    width: 40%;
+    margin-left: 30%;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+ text-align: center;
+margin-top: 100px;
+  }
+  
+  .edit-profile-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .edit-profile-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .edit-profile-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .edit-profile-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .edit-profile-input,
+    .edit-profile-select {
+      padding: 8px;
+    }
+  }
+  
